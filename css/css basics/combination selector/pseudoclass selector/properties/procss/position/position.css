@@ -1,0 +1,21 @@
+section{
+    height: 40vh;
+    width: 100;
+    background-color: black;
+    display: flex;
+    gap: 300px;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 50px;
+} 
+
+#box2{
+    position: fixed;
+    top: 300px;
+}
+

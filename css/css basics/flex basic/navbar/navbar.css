@@ -1,0 +1,17 @@
+nav{
+    height: 65px;
+    width: 100%;
+    background-color:gray;
+}
+article{
+    height: 65px;
+    width: 80%;
+    background-color: rgb(238, 55, 55);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(233, 237, 237);
+    font-weight: bold;
+}
+

@@ -1,0 +1,589 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    background-color: black;
+    color: #f5f5f7;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#check, .checkbtn{
+    display: none;
+    
+}
+.left ul li a:hover{
+    color: white;
+
+}
+.list:hover{
+    color: red;
+}
+
+.left ul{
+    display: flex;
+    list-style: none;
+    
+}
+.left ul li a{
+    color: rgb(167, 160, 160);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .list{
+         height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        text-align: center;
+        top: 51px;
+         left: 100%; 
+        transition: all 2s; 
+        
+
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    } 
+}
+
+
+
+.back{
+    background-color: black;
+     height: 100%; 
+    width: 100%;
+    /* background: url(./img/imac.jpg); */
+    object-fit: cover;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.div, h1{
+    color: #f5f5f7;
+    width: 100%;
+    /* max-width: 350%; */
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    padding-top: 100px;
+    /* font-weight: 600; */
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.div,h2{
+    color: #f5f5f7;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+
+.back h6{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.button{
+    color: #f5f5f7;
+    background-color: rgba(0,0,0,0.92) ;
+    border: solid white;
+    border-radius: 40px;
+    font-size: 17px;
+    padding: 15px 30px;
+    /* padding-top: 10px; */
+    display: inline-block;
+    border-block-start-color: blue;
+    border-block-end-color: red;
+    cursor: pointer;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.div,h3{
+    color: #f5f5f7 ;
+    padding-top: 80px;
+    font-size: 60px;
+    /* cursor: pointer; */
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: center;
+}
+.back a{
+    text-decoration: none;
+}
+.div, h4{
+    color: #f5f5f7 ;
+    font-size: 30px;
+    padding-top: 0;
+    /* cursor: pointer; */
+    /* font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+}
+.div, h5{
+    color: #37373a;
+    font-size: 25px;
+    padding-top: 15px;
+    /* cursor: pointer; */
+
+    /* font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+}
+.div h6{
+    /* color: #f5f5f7 ; */
+    font-size: 20px;
+    padding-top: 10px;
+    color: red;
+    /* background: url(./img/imac.jpg);
+    margin: 0;
+    padding: 0;
+    background-color: white; */
+}
+
+/* .back1{
+    background: url(./img/hero_macmini_preorder__ixuialh97nyq_small_2x.jpg);
+    height: 120vh;
+    width: 100%;
+    padding-top: 0;
+}
+.back1,h1{
+    font-size: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+   
+}
+.back1 , h2{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.back1, h3{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.back1,h4{
+    font-size: 20px;
+}
+.back1,a{
+    text-decoration: none;
+} */
+
+.back2{
+    /* background: url(./img/hero_iphone_14_pro__e0act2165xqq_medium_2x.jpg); */
+    background-color: black;
+     height: 100%; 
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 0;
+}
+.back2 h1{
+    margin-top: 1px;
+}
+
+.back2 h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.btn1{
+    color: grey;
+    background-color: rgba(0,0,0,0.92) ;
+    border: solid grey;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 5px 15px;
+    /* padding-top: 10px; */
+    display: inline-block;
+    /* border-block-start-color: blue;
+    border-block-end-color: red; */
+    cursor: pointer;
+    
+}
+.back2,h3{
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 0px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+.back2,h3,a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ .back3{
+    background-color: black;
+     height: 100%; 
+    width: 100%;   
+}
+
+.back3 h1{
+    font-size: 40px;
+    margin-top: 1px;
+    
+}
+
+.back3  h2{
+    font-size: 30px;
+    margin-top: 5px;
+    /* color: red; */
+    font-weight: 5px;
+    margin-bottom: 0%;
+    color: red;
+}
+.back3 h3{
+    font-size: 30px;
+    margin-top: 0px;
+    padding: auto;
+}
+.back3 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 50px ;
+}
+
+.back4{
+    background-color: white;
+}
+.back4 h1{
+    color: black;
+}
+
+.back4 h2{
+    color: black;
+}
+
+section{
+    background-color: black;
+    height: 700px;
+    width: 49%;
+    
+}
+section h5{
+    color: #f5f5f7;
+    font-size: 45px;
+    margin-top: 5px;
+    padding-top: 50px;
+    text-align: center;
+}
+section h6{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+section h4{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+section {
+    /* background: url(./img/1i.jpg ); */
+    height: 600px;
+    position: absolute;
+    display: flex;
+   
+}
+section #div1{
+     /* background: url(./img/1i.jpg );  */
+    height: 49vh;
+    width: 700px; 
+    position: relative;
+
+    display:block;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    background-color:black;
+    color: #f5f5f7;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#check, .checkbtn{
+    display: none;
+    
+}
+.left ul li a:hover{
+    color: white;
+
+}
+.list:hover{
+    color: red;
+}
+
+.left ul{
+    display: flex;
+    list-style: none;
+    
+}
+.left ul li a{
+    color: rgb(167, 160, 160);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .list{
+         height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.92);
+        position: fixed;
+        text-align: center;
+        top: 51px;
+         left: 100%; 
+        transition: all 2s; 
+        
+
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    } 
+}
+
+
+
+.back{
+    background-color: black;
+     height: 100%; 
+    width: 100%;
+    /* background: url(./img/imac.jpg); */
+    object-fit: cover;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.div, h1{
+    color: #f5f5f7;
+    width: 100%;
+    /* max-width: 350%; */
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    padding-top: 100px;
+    /* font-weight: 600; */
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.div,h2{
+    color: #f5f5f7;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+
+.back h6{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.button{
+    color: #f5f5f7;
+    background-color: rgba(0,0,0,0.92) ;
+    border: solid white;
+    border-radius: 40px;
+    font-size: 17px;
+    padding: 15px 30px;
+    /* padding-top: 10px; */
+    display: inline-block;
+    border-block-start-color: blue;
+    border-block-end-color: red;
+    cursor: pointer;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.div,h3{
+    color: #f5f5f7 ;
+    padding-top: 80px;
+    font-size: 60px;
+    /* cursor: pointer; */
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: center;
+}
+.back a{
+    text-decoration: none;
+}
+.div, h4{
+    color: #f5f5f7 ;
+    font-size: 30px;
+    padding-top: 0;
+    /* cursor: pointer; */
+    /* font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+}
+.div, h5{
+    color: #37373a;
+    font-size: 25px;
+    padding-top: 15px;
+    /* cursor: pointer; */
+
+    /* font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+}
+.div h6{
+    /* color: #f5f5f7 ; */
+    font-size: 20px;
+    padding-top: 10px;
+    color: red;
+    /* background: url(./img/imac.jpg);
+    margin: 0;
+    padding: 0;
+    background-color: white; */
+}
+
+/* .back1{
+    background: url(./img/hero_macmini_preorder__ixuialh97nyq_small_2x.jpg);
+    height: 120vh;
+    width: 100%;
+    padding-top: 0;
+}
+.back1,h1{
+    font-size: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+   
+}
+.back1 , h2{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.back1, h3{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.back1,h4{
+    font-size: 20px;
+}
+.back1,a{
+    text-decoration: none;
+} */
+
+.back2{
+    /* background: url(./img/hero_iphone_14_pro__e0act2165xqq_medium_2x.jpg); */
+    background-color: black;
+     height: 100%; 
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 0;
+}
+.back2 h1{
+    margin-top: 1px;
+}
+
+.back2 h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.btn1{
+    color: grey;
+    background-color: rgba(0,0,0,0.92) ;
+    border: solid grey;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 5px 15px;
+    /* padding-top: 10px; */
+    display: inline-block;
+    /* border-block-start-color: blue;
+    border-block-end-color: red; */
+    cursor: pointer;
+    
+}
+.back2,h3{
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 0px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+.back2,h3,a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ .back3{
+    background-color: black;
+     height: 100%; 
+    width: 100%;   
+}
+
+.back3 h1{
+    font-size: 40px;
+    margin-top: 1px;
+    
+}
+
+.back3  h2{
+    font-size: 30px;
+    margin-top: 5px;
+    /* color: red; */
+    font-weight: 5px;
+    margin-bottom: 0%;
+    color: red;
+}
+.back3 h3{
+    font-size: 30px;
+    margin-top: 0px;
+    padding: auto;
+}
+.back3 h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 50px ;
+}
+
+.back4{
+    background-color: black;
+}
+.back4 h1{
+    color: black;
+}
+
+.back4 h2{
+    color: black;
+}

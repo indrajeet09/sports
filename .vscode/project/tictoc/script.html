@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <transition v-on:enter="enter" v-bind:css="false" appear>
+            <div class="butter-cheese-eggs" v-show="true">
+                <div v-for="(block,index) in grid" @click="select(index)">
+                    <block :figure.synce="block.figure" />
+                </div>
+            </div>
+        </transition>
+
+        <transition v-on:enter="enterWin" v-bind:css="false">
+            <win v-show="winner" :click-handler="restart"></win>
+        </transition>
+     <div>
+
+        <template id="block">
+            <div class="block">
+                <transition v-on:enter="enter" v-bind:css="false">
+                    <span v-show="figure > -1">{{ fig }}</span>
+                </transition>
+            </div>
+        </template>
+     </div>   
+        
+    </div>
+    
+</body>
+</html>
